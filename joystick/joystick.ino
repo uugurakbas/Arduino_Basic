@@ -1,4 +1,3 @@
-#define sw 4
 #define led1 5
 #define led2 6
 #define led3 7
@@ -11,7 +10,6 @@ int drx;
 int dgrx;
 
 void setup() {
-  pinMode(sw, INPUT);
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
@@ -41,9 +39,6 @@ void loop() {
   digitalWrite(led4, HIGH);
   else 
   digitalWrite(led4, LOW);
-  if(digitalRead(sw) == 1)
-  digitalWrite(led5, HIGH);
-  else
-  digitalWrite(led5, LOW);
+
 
 }
